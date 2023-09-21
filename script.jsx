@@ -10,8 +10,8 @@ function Nav(){
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>    
             </div>
@@ -155,7 +155,7 @@ function RecentWorks(){
 
 function Form(){
     return (
-        <div className="form">
+        <div id="contact" className="form">
             <div className="form-1">
                 <h1>Got a project in <span class="blue">mind?</span></h1>
                 <img src="images/scaling-man.svg"/>
@@ -196,16 +196,16 @@ function Footer(){
                 <nav className="footer-nav">
                     <ul>
                         <li><a href="#"><img src="images/home.svg" /> Home</a></li>
-                        <li><a href="#"><img src="images/contact.svg" />About me</a></li>
-                        <li><a href="#"><img src="images/phone.svg" />Contact</a></li>
+                        <li><a href="#about-me"><img src="images/contact.svg" />About me</a></li>
+                        <li><a href="#contact"><img src="images/phone.svg" />Contact</a></li>
                     </ul>
                 </nav>
                 <nav className="footer-nav-social">
                     <ul>
-                        <li><a href="#"><img src="images/facebook.svg" alt="" /></a></li>
-                        <li><a href="#"><img src="images/instagram.svg" alt="" /></a></li>
-                        <li><a href="#"><img src="images/twitter.svg" alt="" /></a></li>
-                        <li><a href="#"><img src="images/youtube.svg" alt="" /></a></li>
+                        <li><a href="https://facebook.com/" target="_blank"><img src="images/facebook.svg" alt="" /></a></li>
+                        <li><a href="https://instagram.com/" target="_blank"><img src="images/instagram.svg" alt="" /></a></li>
+                        <li><a href="https://twitter.com/" target="_blank"><img src="images/twitter.svg" alt="" /></a></li>
+                        <li><a href="https://youtube.com/" target="_blank"><img src="images/youtube.svg" alt="" /></a></li>
                     </ul>
                 </nav>
                 <div className="terms">

@@ -408,6 +408,11 @@ html{
                             display: flex;
                             
                         }
+                        .button-send button:hover{
+                            transform:translateY(-10px);
+                            transition: 0.8s;
+                            
+                        }
             .footer {
                 display: flex;
             }
@@ -426,6 +431,11 @@ html{
                 }
                     .footer-2 nav ul li{
                         display: inline-block;
+                    }
+
+                    .footer-2 nav ul li:hover{
+                        transform: scale(1.1);
+                        transition: 0.8s ease;
                     }
                     
                     .footer-nav a{
@@ -466,5 +476,9 @@ html{
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
+                    }
+                    .terms a:hover {
+                        color: rgba(227, 227, 227, 0.333);
+
                     }
             
