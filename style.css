@@ -63,7 +63,7 @@ html{
 
             #header {
                 display: flex;
-                height: 80vh;
+                
             }
                 .item-1 {
                     width: 40%;
@@ -71,7 +71,7 @@ html{
                     z-index: 3;
                 }
                     .overflow {
-                        position: absolute;
+                        position: relative;
                     }
                     .over-item-1{
                         z-index: 1;
@@ -79,7 +79,7 @@ html{
                         grid-template-areas: "icone h1"
                                             "icone h2"
                                             "icone btn";
-                        top: 15vh;
+                        margin-top: 200px;
                         padding-left: 6vh;  
                     }
                     .over-item-1 .arrow-spin {grid-area: icone;}
@@ -136,7 +136,7 @@ html{
                         line-height: normal;
                     }
                     .btn-down{
-                        margin: 70vh 0 ;
+                        margin: 40% 0 0 0  ;
                         border-right: 1px solid rgba(238, 238, 238, 0.10);  
                         
                     }
@@ -171,7 +171,6 @@ html{
 
             .aboutme {
                 display: flex;
-                height: 100vh;
                 border-bottom: 1px solid rgba(238, 238, 238, 0.10);  
             }
                 .aboutme-item-1 {
@@ -186,7 +185,7 @@ html{
                         align-content: center;
                         justify-content: center;
                         
-                        height: 100vh;
+                        height: 110%;
                     }
                         .aboutme-icon{
                             position: absolute;
