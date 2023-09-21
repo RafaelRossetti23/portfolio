@@ -21,7 +21,7 @@ html{
             }
             #navbar {
                 display: flex;
-                height: 15vh;
+                height: 200px;
                 border-bottom: 1px solid rgba(238, 238, 238, 0.10);
                
                 
@@ -80,7 +80,7 @@ html{
                                             "icone h2"
                                             "icone btn";
                         margin-top: 200px;
-                        padding-left: 6vh;  
+                        padding-left: 80px;  
                     }
                     .over-item-1 .arrow-spin {grid-area: icone;}
                     .over-item-1 .first-h1{grid-area: h1;}
@@ -159,8 +159,8 @@ html{
                     position: relative;
                     z-index: 2;
                     border-left: 1px solid rgba(238, 238, 238, 0.10);  
-                    padding-top: 10vh; 
-                    padding-right: 10vh;
+                    padding-top: 50px; 
+                    padding-right: 80px;
                 }
               
                 
