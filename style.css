@@ -480,4 +480,173 @@ html{
                         color: rgba(227, 227, 227, 0.333);
 
                     }
-            
+            /* medias query */
+
+            @media only screen and (max-width: 600px) {
+                #navbar {
+                    display: flex;
+                    flex-direction: column;
+                 
+                    border-bottom: 1px solid rgba(238, 238, 238, 0.10);
+                    
+                }
+                    #navbar .logo{
+                        padding-top: 40px;
+                    }
+                    #navbar .nav-header{
+                        border: none;
+                        width: 100%;
+                        display: block;
+                        margin: 0;
+                        padding-top: 20px;
+                        padding-left: 0;
+                    
+                    }
+                        #navbar .nav-header ul{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 100%;
+                         
+                        }
+                            #navbar .nav-header ul li {
+                                font-size: 18px;
+                                width: 100%;
+                                justify-content: center;
+                                text-align: center;
+                              
+                            }
+                #header {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    border-bottom: 1px solid rgba(238, 238, 238, 0.10);
+                }
+                    .over-item-1{
+                        margin: 50px 0 0 0;
+                        padding: 0 0 80px 0;
+                        order:2;
+
+                     
+                    }
+                    .h1-principal {
+                        font-size: 40px;
+                    }
+                    .nav-btn ul li{
+                        margin: 10px;
+                        width: 100%;
+                    }
+                    .btn-down {
+                        display: none;
+                    }
+                    .item-2 {
+                        width: auto;
+                        padding: 0;
+                        margin: 0;
+                        justify-content: center;
+                    }
+                    .item-2 img {
+                        width: 320px;
+                    }
+                #about-me{
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+                    #about-me .aboutme-item-1{
+                        width: 100%;
+                        padding: 50px;
+                        border: 0;
+                    }
+                    #about-me .aboutme-item-2 {
+                        width: 100%;
+                        padding: 20px 0;
+                    }
+                    #about-me .aboutme-item-2 img{
+                        width: 350px;
+                    }
+                    .aboutme-icon{
+                        width: 80%;
+                    }
+                .divisoria{
+                    display:none;
+                }
+                .recent-works {
+                    padding: 100px 20px;
+                }
+                    .recent-works h1{
+                        font-size: 45px;
+                    }
+                    .recent-works nav ul li{
+                        padding: 0;
+                    }
+                #contact {
+                    display: flex;
+                    flex-direction: column;
+                }
+                #contact .form-1,
+                #contact .form-2{
+                    width: 100%;
+                }
+                #contact .form-1{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    padding: 50px 20px;
+                    border: 0;
+                }
+                #contact .form-1 img{
+                    margin: 0;
+                }
+                #contact .form-2 {
+                    padding: 0;
+                }
+                #contact .form-2 .keyboard {
+                    margin: 0;
+                    padding: 0 0 0 150px;
+                }
+                #contact .form-2 form{
+                    display: flex;
+                    flex-direction: column;
+                    width: auto;
+                    padding: 0 20px;
+                }
+                #contact .form-2 .message textarea {
+                    width: 100%;
+                }
+                #contact .form-2 form button {
+                    width: 100%;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+
+                }
+                .footer{
+                    display: flex;
+                    flex-direction: column;
+                }
+                    .footer .footer-2 {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        padding: 20px 0 0 0;
+                    }
+                    .footer .footer-2 .footer-nav{
+                        margin: 0;
+                    }
+                    .footer .footer-2 .footer-nav ul li{
+                        padding: 10px;
+                    }
+                    .footer .footer-2 .footer-nav-social{
+                        padding: 10px;
+                        justify-content: center;
+                        display: flex;
+                    }
+                    .footer .footer-2 .footer-nav-social ul li{
+                        padding: 10px;
+                    }
+                    .footer .terms{
+                        display: flex;
+                        padding: 20px 0 0 0;
+                        margin: 0;
+                        justify-content: center;
+                    }
+
+            }
