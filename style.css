@@ -532,7 +532,7 @@ html{
                     border-bottom: 1px solid rgba(238, 238, 238, 0.10);
                 }
                     .over-item-1{
-                        margin: 50px 0 0 0;
+                        margin: 20px 0 0 0;
                         padding: 0 0 80px 0;
                         order:2;
 
@@ -560,15 +560,10 @@ html{
                         width: 100%;
                     }
                     #download-cv{
-                        
                         display: flex;
                         width: 80%;
-                       
                     }
-                    #download-cv img {
-                        
-                        
-                    }
+                    
                     .item-2 {
                         width: auto;
                         padding: 0;
@@ -576,7 +571,7 @@ html{
                         justify-content: center;
                     }
                     .item-2 img {
-                        width: 320px;
+                        width: 280px;
                     }
                 #about-me{
                     display: flex;
