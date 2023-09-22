@@ -296,9 +296,9 @@ html{
                     width: 300px;
                 }
                 .services-images ul li img:hover {
-                    transform: scale(1.8);
-                    margin: 0 100px;
-                    transition: .5s ease;
+                    transform: scale(1.5);
+                    margin:  50px;
+                    transition: 1s ease;
                 }
             .form{
                 display: flex;
