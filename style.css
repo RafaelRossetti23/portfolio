@@ -308,7 +308,7 @@ html{
             }
                 .form-1{
                     width: 40%;
-                    padding: 200px 0;
+                    padding: 200px 0 0 20px;
                     border-right: 1px solid rgba(238, 238, 238, 0.10);
                 }
                     .form-1 h1{
@@ -326,7 +326,7 @@ html{
 
                 .form-2{
                     width: 60%;
-                    padding: 100px 0;
+                    padding: 100px 100px 0 0;
                 }
                     .form-2 form{
                         width: 400px;
