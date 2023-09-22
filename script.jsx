@@ -60,32 +60,32 @@ function Header(){
             </div>
         </header>
         
-    )
-}
-function AboutMe(){  
-   function read() {
-        const btnLess = document.querySelector(".less")
-        const btnMore = document.querySelector(".more")
-        const btn = document.querySelector(".content")
-        const contentAdd = document.querySelector(".content-add");
-        contentAdd.style.display = "block";
-        btnLess.style.display ="block"
-        btnMore.style.display ="none"  
+        )
     }
-    function less(){
-        const btnLess = document.querySelector(".less")
-        const btnMore = document.querySelector(".more")
-        const btn = document.querySelector(".content")
-        const contentAdd = document.querySelector(".content-add");
-        contentAdd.style.display = "none";
-        btnLess.style.display ="none"
-        btnMore.style.display ="block"
-    }
-    function showLess(){
-
-    }
-    return (
-        <div className="aboutme" id="about-me">
+    function AboutMe(){  
+        function read() {
+            const btnLess = document.querySelector(".less")
+            const btnMore = document.querySelector(".more")
+            const btn = document.querySelector(".content")
+            const contentAdd = document.querySelector(".content-add");
+            contentAdd.style.display = "block";
+            btnLess.style.display ="block"
+            btnMore.style.display ="none"  
+        }
+        function less(){
+            const btnLess = document.querySelector(".less")
+            const btnMore = document.querySelector(".more")
+            const btn = document.querySelector(".content")
+            const contentAdd = document.querySelector(".content-add");
+            contentAdd.style.display = "none";
+            btnLess.style.display ="none"
+            btnMore.style.display ="block"
+        }
+        function showLess(){
+            
+        }
+        return (
+            <div className="aboutme" id="about-me">
             <div className="aboutme-item-1">
                 <div className="about-me-img">
                     <img className="aboutme-icon"
@@ -118,31 +118,160 @@ function Divisoria(){
     )
 }
 function RecentWorks(){
+    
+    function UI(){
+        const UIbutton = document.getElementById("UI");
+        const UXbutton = document.getElementById("UX");
+        const WDbutton = document.getElementById("WebDesign");
+        const ALLbutton = document.getElementById("ALL");
+
+        UIbutton.classList.add("active");
+        UXbutton.classList.remove("active");
+        WDbutton.classList.remove("active");
+        ALLbutton.classList.remove("active");
+
+        const UI = document.querySelectorAll(".UI")
+        UI.forEach(function(UIitem){
+            UIitem.style.display = "inline-block"
+        })
+    
+
+        const elementos = document.querySelectorAll(".UX");
+        elementos.forEach(function(elemento){
+            elemento.style.display = "none";
+        })
+        const elementos2 = document.querySelectorAll(".WebDesign");
+        elementos2.forEach(function(elemento){
+            elemento.style.display = "none";
+        })
+
+        
+
+        
+
+
+        
+    }
+    function UX(){
+
+        const UIbutton = document.getElementById("UI");
+        const UXbutton = document.getElementById("UX");
+        const WDbutton = document.getElementById("WebDesign");
+        const ALLbutton = document.getElementById("ALL");
+
+        UXbutton.classList.add("active");
+        UIbutton.classList.remove("active");
+        WDbutton.classList.remove("active");
+        ALLbutton.classList.remove("active");
+
+     
+        const UX = document.querySelectorAll(".UX")
+        UX.forEach(function(UXitem){
+            UXitem.style.display = "inline-block"
+        })
+
+
+        const elementos = document.querySelectorAll(".UI");
+        elementos.forEach(function(elemento){
+            elemento.style.display = "none";
+        })
+        const elementos2 = document.querySelectorAll(".WebDesign");
+        elementos2.forEach(function(elemento){
+            elemento.style.display = "none";
+        })
+
+
+    }
+    function WebDesign(){
+        const UIbutton = document.getElementById("UI");
+        const UXbutton = document.getElementById("UX");
+        const WDbutton = document.getElementById("WebDesign");
+        const ALLbutton = document.getElementById("ALL");
+
+        UIbutton.classList.remove("active");
+        UXbutton.classList.remove("active");
+        WDbutton.classList.add("active");
+        ALLbutton.classList.remove("active");
+
+        const WebDesign = document.querySelectorAll(".WebDesign")
+        WebDesign.forEach(function(WDitem){
+            WDitem.style.display = "inline-block"
+        })
+
+        const elementos = document.querySelectorAll(".UI");
+        elementos.forEach(function(elemento){
+            elemento.style.display = "none";
+        })
+        const elementos2 = document.querySelectorAll(".UX");
+        elementos2.forEach(function(elemento){
+            elemento.style.display = "none";
+        })
+
+    }
+    function ALL(){
+        const UIbutton = document.getElementById("UI");
+        const UXbutton = document.getElementById("UX");
+        const WDbutton = document.getElementById("WebDesign");
+        const ALLbutton = document.getElementById("ALL");
+
+        UIbutton.classList.remove("active");
+        UXbutton.classList.remove("active");
+        WDbutton.classList.remove("active");
+        ALLbutton.classList.add("active");
+
+        const UI = document.querySelectorAll(".UI")
+        UI.forEach(function(UIitem){
+            UIitem.style.display = "inline-block"
+        })
+        const UX = document.querySelectorAll(".UX")
+        UX.forEach(function(UXitem){
+            UXitem.style.display = "inline-block"
+        })
+        const WebDesign = document.querySelectorAll(".WebDesign")
+        WebDesign.forEach(function(WDitem){
+            WDitem.style.display = "inline-block"
+        })
+        
+    }
+    
+    
     return(
+        
         <div className="recent-works">
+            
             <h1>My recent <span className="blue">works</span></h1>
             <nav className="services-category">
                 <ul>
-                    <li className="active">All</li>
-                    <li>UI</li>
-                    <li>UX</li>
-                    <li>WebDesign</li>
+                    <li onClick={ALL} id="ALL" className="active">All</li>
+                    <li onClick={UI} id="UI">UI</li>
+                    <li onClick={UX} id="UX">UX</li>
+                    <li onClick={WebDesign} id="WebDesign">WebDesign</li>
                 </ul>
             </nav>
             <nav className="services-images">
                 <ul>
                     <li>
-                        <img
+                        <img className="UI"
                             src="images/recent-work-1.svg" 
                         />
                     </li>
                     <li>
-                        <img
+                        <img className="UI"
+                            src="images/recent-work-1.svg" 
+                        />
+                    </li>
+                    <li>
+                        <img className="UX"
                             src="images/recent-work-2.svg" 
                         />
                     </li>
                     <li>
-                        <img
+                        <img className="WebDesign"
+                            src="images/recent-work-3.svg" 
+                        />
+                    </li>
+                    <li>
+                        <img className="WebDesign"
                             src="images/recent-work-3.svg" 
                         />
                     </li>
@@ -150,12 +279,12 @@ function RecentWorks(){
             </nav>
         </div>
         
-    )
-}
-
-function Form(){
-    return (
-        <div id="contact" className="form">
+        )
+    }
+    
+    function Form(){
+        return (
+            <div id="contact" className="form">
             <div className="form-1">
                 <h1>Got a project in <span class="blue">mind?</span></h1>
                 <img src="images/scaling-man.svg"/>
@@ -216,7 +345,6 @@ function Footer(){
         </div>
     )
 }
-
 function Home(){
     return (
         <div className="container">
@@ -231,7 +359,5 @@ function Home(){
         </div>
     )
 }
-
-
 
 ReactDOM.render(<Home />, app);
