@@ -528,8 +528,19 @@ html{
                         margin: 10px;
                         width: 100%;
                     }
+                    .item-1 {
+                        width: 100%;
+                    }
                     .btn-down {
-                        display: none;
+                        /* display: none; */
+                        border: none;
+                        margin: 0;
+                        padding: 0;
+                        width:100%;
+                    }
+                    .btn-down .btn-1{
+                        justify-content: center;
+                        width: 100%;
                     }
                     .item-2 {
                         width: auto;
