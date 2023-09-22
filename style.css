@@ -112,6 +112,10 @@ html{
                     }
                     #download-cv{
                         background-color: rgba(57, 62, 70, 0.75) !important;
+                        display: flex;
+                    }
+                    #download-cv img {
+                        margin-left: 8px;
                     }
                     .item-1 nav li{
                         display: inline-block;
