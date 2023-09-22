@@ -291,19 +291,20 @@ function RecentWorks(){
             </div>
             <div className="form-2">
                 <img class="keyboard" src="images/keyboard.svg" alt="" />
-                <form action="#">
+                <form action="https://api.sheetmonkey.io/form/3tM9kUMen8EbhViaozpnXu" method="post">
                     <div className="name">
                         <label>Your name</label>
-                        <input type="text" name="name" placeholder="name"/>
+                        <input type="text" name="Name" placeholder="name" required/>
                     </div>
                     <div className="email">
                         <label>Your email</label>
-                        <input type="email" name="email" placeholder="email"/>
+                        <input type="email" name="Email" required placeholder="email"/>
                     </div>
                     <div className="message">
                         <label>Your Message</label>
-                        <textarea rols="50" cols="20">Message</textarea>
+                        <textarea type="text" name="Message" required rols="50" cols="20">Message</textarea>
                     </div>
+                    <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
                     <div className="button-send">
                     <button>Send Message <img src="images/send.svg" /></button>
                     </div>
