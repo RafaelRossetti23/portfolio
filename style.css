@@ -606,6 +606,19 @@ html{
                     .services-category ul li{
                         margin-bottom: 15px;
                     }
+                    .services-images ul {
+                        display: flex;
+                        flex-direction: column;
+                        
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .services-images ul li img:hover{
+                       margin: 0;
+                       transform: none;
+                    }
+                    
+
                 #contact {
                     display: flex;
                     flex-direction: column;
