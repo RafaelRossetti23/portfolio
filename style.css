@@ -553,6 +553,16 @@ html{
                         justify-content: center;
                         width: 100%;
                     }
+                    #download-cv{
+                        
+                        display: flex;
+                        width: 80%;
+                       
+                    }
+                    #download-cv img {
+                        
+                        
+                    }
                     .item-2 {
                         width: auto;
                         padding: 0;
